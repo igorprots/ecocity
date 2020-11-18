@@ -1,0 +1,241 @@
+
+div.candidatos img {
+    position:absolute;
+    top:0;
+    left:0;
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    padding:1px;
+}
+div.candidatos .parcial {
+    display:inline-block;
+    width:100%;
+    /*height:40px;*/
+    vertical-align:middle;
+    /*padding: 0 0 0 10px;*/
+}
+div.candidatos .parcial .info {
+    height:25px;
+    position: relative;
+}
+div.candidatos .parcial .info > div {
+    float:left;
+}
+div.candidatos .parcial .info .nome {
+    position: absolute;
+    top: 0;
+    left:0;
+    font-size: 15px;
+    font-weight: 600;
+    color: #192D49;
+}
+div.candidatos .parcial .info .eleito, div.candidatos .parcial .info .segundo-turno {
+    color: #fff;
+    padding: 0 5px 2px 5px;
+    border-radius: 2px;
+}
+div.candidatos .parcial .info .percentagem-num {
+    position: absolute;
+    top:0;
+    right:0;
+    font-size: 18px;
+    font-weight: 700;
+    color: #192D49;
+}
+div.candidatos .parcial .progressBar {
+    position:relative;
+    width:100%;
+    height:7px;
+    margin:5px 0 2px;
+    border-radius:10px;
+    background: #e7e7e7;
+}
+div.candidatos .parcial .progressBar .percentagem {
+    position:absolute;
+    top:0;
+    left:0;
+    height:7px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: #A4B5C0;
+    -webkit-transition: 5s all;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-name: animationProgress;
+}
+div.candidatos.color1 .parcial .percentagem {
+    background-color:#e0b92a;
+}
+div.candidatos.color2 .parcial .percentagem {
+    background-color:#C44738;
+}
+div.candidatos.color3 .parcial .percentagem {
+    background-color:#a1daf7;
+}
+div.candidatos.color4 .parcial .percentagem {
+    background-color:#272726;
+}
+div.candidatos .parcial .partidas {
+    font-family: Arial, helvetica, Sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    color: #9e9c9b;
+    text-transform: uppercase;
+}
+.percentual {
+    -webkit-transition: 5s all;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-name: animationProgress;
+    transition: 5s all;
+    animation-duration: 5s;
+    animation-name: animationProgress;
+}
+@-webkit-keyframes animationProgress {
+    from {
+        width:0;
+    }
+}
+@keyframes animationProgress {
+    from {
+        width:0;
+    }
+}
+
+/* *************************** */
+
+.input_checkbox_btn__wrap{
+    margin-top: -1em;
+    /*display: -webkit-box;
+    display: -ms-flexbox;*/
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    /*-ms-flex-flow: row wrap;*/
+    flex-flow: row wrap;
+    margin-left: -1em;
+    margin-bottom: 2em;
+}
+
+.input_checkbox_btn{
+    margin-top: .6em;
+    margin-left: 1em;
+    min-width: 4.5em;
+}
+
+.input_checkbox_btn__label{
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 400;
+    text-align: center;
+    width: 100%;
+}
+
+.input_checkbox input, .input_checkbox_btn input{
+    -webkit-appearance: none;
+    display: none;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.input_checkbox_btn__label span{
+    display: inline-block;
+    transition: border .3s ease;
+    /*border: 2px solid #848692;*/
+    /*border-radius: .2em;*/
+    width: 4.5em;
+    line-height: 40px;
+    margin-top: 10px;
+    background:#EEE;
+}
+
+.input_checkbox_btn input:checked+span {
+    border-color: #e0b92a;
+    background-color: #a1daf7;
+    color: #fff;
+    font-weight:bold;
+}
+
+.input_checkbox_btn input:hover+span {
+    background-color: /*#e0b92a;*/ #848692;
+    color: #fff;
+}
+
+/************************ */
+.min_max {
+    margin-bottom: 2em;
+    /*text-align: center;*/
+    display: table;
+}
+.min_max input {
+    width: 30px;
+    padding: 0 15px;
+    font: 300 15px/35px 'Roboto';
+    color: #555;
+    letter-spacing: .2px;
+    border: 2px solid #848692;
+    /*float: left;*/
+    transition: .3s ease;
+    margin-right:15px;
+}
+
+.min_max input:hover { padding:0 20px; }
+
+/************************ */
+
+.table    { display: table; width:100% }
+.table a  { color: #555; }
+.tr       { display: table-row }
+.tr:nth-child(even) { background-color: #f2f2f2 }
+.tr:hover, .tr:nth-child(even):hover { color:white; background-color: #e0b92a }
+.thead    { display: table-header-group;  font-weight: bold; }
+.tbody    { display: table-row-group }
+.tfoot    { display: table-footer-group }
+.col      { display: table-column }
+.colgroup { display: table-column-group }
+.td       { display: table-cell; min-width:50px; }
+.th       { display: table-cell; min-width:50px;}
+.caption  { display: table-caption }
+
+@media (max-width: 700px) {
+.table    { display: block }
+.tr       { display: block }
+.thead    { display: block }
+.tbody    { display: block }
+.tfoot    { display: block }
+.col      { display: none }
+.colgroup { display: none }
+.td, .th  { display: inline-block }
+.caption  { display: block }
+}
+
+.filters{
+    background-color: #fcffc4; /*fcffc4*/
+    margin-bottom: 40px;
+    padding: 70px 0 60px;
+    /*text-align: center;*/
+}
+
+.filters2 {
+    margin-bottom: 80px;
+}
+
+/*******************************************/
+
+.dotted_list li {
+    position: relative;
+    margin-bottom: 10px;
+    background: url(./system/images/bg_linedots.png) repeat-x 0% 80%;
+}
+
+.dotted_list span {
+    background: #fff;
+}
+
+.dotted_list em {
+    position: absolute;
+    right: 0px;
+    background: #fff;
+}
