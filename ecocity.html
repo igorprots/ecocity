@@ -67,27 +67,13 @@
 
 
         <!-- Photo Panel | START -->
-        <div class="section panel hero full fade">
-            <div class="slider">
-
-                <div class="item">
-                    <div class="back">
-                        <div class="video-wrapper">
-                            <video class="video" src="./video/ecocity.mp4" autoplay loop></video>
-                        </div>
-                    </div>
-                    <div class="panel-button">
-                        <div class="button-container">
-                            <a href="#"><strong>Мечта</strong> имеет адрес</a>
-                            <span><i class="icon ion-ios-arrow-right"></i></span>
-                        </div>
-                    </div>
+        <div class="section panel hero full fade panel-videobg">
+            <div class="back">
+                <div class="video-wrapper">
+                    <video class="video" poster="./images/video-bg.png" autoplay muted>
+                        <source src="./video/ecocity.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                    </video>
                 </div>
-
-            </div>
-            <div class="slider-nav">
-                <a class="prev"><i class="icon ion-ios-arrow-left"></i></a>
-                <a class="next"><i class="icon ion-ios-arrow-right"></i></a>
             </div>
         </div>
         <!-- Photo Panel | END -->
@@ -740,30 +726,15 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="carousel-mix__side">
-                            <div class="carousel-mix__arrows">
-                                <div class="carousel-mix__arrow">
-                                    <div class="arrow j-carousel-mix-next arrow_is_big" style="stroke: #1d1d1b;">
-                                        <svg width="17" height="7" viewBox="0 0 17 7" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1.43783 3.229H14.8962" stroke-linecap="square" />
-                                            <path d="M12.917 0.458008L16.0837 3.22884L12.917 5.99967" />
-                                        </svg>
-                                    </div>
-                                </div>
-                                <div class="carousel-mix__arrow">
-                                    <div class="arrow j-carousel-mix-prev arrow_is_big" style="stroke: #1d1d1b;">
-                                        <svg width="17" height="7" viewBox="0 0 17 7" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M16.3542 3.229H2.89583" stroke-linecap="square" />
-                                            <path d="M4.875 0.458008L1.70833 3.22884L4.875 5.99967" />
-                                        </svg>
-                                    </div>
+                            <div class="carousel-mix__side">
+                                <div class=" carousel-mix__arrows slider-nav">
+                                    <a class="prev j-carousel-mix-prev "><i class="icon ion-ios-arrow-left"></i></a>
+                                    <a class="next j-carousel-mix-next"><i class="icon ion-ios-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
+
+
                     </div>
 
                 </div>
@@ -773,81 +744,71 @@
 
             <!-- NEWS SOCIAL| START -->
 
-            <div class="section boxes fade visible">
+            <div class="section text fade">
                 <div class="center">
-                    <div class="news">
-                        <h2 class="news__title">
-                            Новости проекта
-                        </h2>
-                        <div class="center wrecker" style="display: table;">
-                            <div class="wrecker-row" style="display:table-row">
-                                <div class="col-3 wrecker-cell" style="display: table-cell; float: none;">
-                                    <div class="item">
-                                        <div class="thumb"><a href="#">
-                                                <div class="back" data-image="/images/news-img.jpg"
-                                                    style="background-image: url(/images/news-img.jpg">
-                                                </div>
-                                            </a></div>
-                                        <div class="details">
-                                            <div class="date">
-                                                <span class="day">21</span>
-                                                <span class="month">сентября</span>
-                                            </div>
-                                            <h3>Новость из соц сетей</h3>
-                                            <p>краткая анотация в одно предложение</p>
-                                            <p>
-                                                <a href="#" class="button">Подробнее
-                                                    <i class="icon ion-ios-arrow-right"></i></a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-3 wrecker-cell" style="display: table-cell; float: none;">
-                                    <div class="item">
-                                        <div class="thumb"><a href="#">
-                                                <div class="back" data-image="/images/news-img.jpg"
-                                                    style="background-image: url(/images/news-img.jpg">
-                                                </div>
-                                            </a></div>
-                                        <div class="details">
-                                            <div class="date">
-                                                <span class="day">21</span>
-                                                <span class="month">сентября</span>
-                                            </div>
-                                            <h3>Новость из соц сетей</h3>
-                                            <p>краткая анотация в одно предложение</p>
-                                            <p>
-                                                <a href="#" class="button">Подробнее
-                                                    <i class="icon ion-ios-arrow-right"></i></a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-3 wrecker-cell" style="display: table-cell; float: none;">
-                                    <div class="item">
-                                        <div class="thumb"><a href="#">
-                                                <div class="back" data-image="/images/news-img.jpg"
-                                                    style="background-image: url(/images/news-img.jpg">
-                                                </div>
-                                            </a></div>
-                                        <div class="details">
-                                            <div class="date">
-                                                <span class="day">21</span>
-                                                <span class="month">сентября</span>
-                                            </div>
-                                            <h3>Новость из соц сетей</h3>
-                                            <p>краткая анотация в одно предложение</p>
-                                            <p>
-                                                <a href="#" class="button">Подробнее
-                                                    <i class="icon ion-ios-arrow-right"></i></a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
+                    <div class="col-1">
+                        <h2 style="text-align: center;">Новости проекта</h2>
+                    </div>
+
+                    <div class="col-3 post">
+                        <img src="./images/post/7-10.jpg" alt="">
+                        <div class="post__descr">
+                            <div class="post__descr-img">
+                                <img src="./images/post/like.png" alt="" class="post__descr-react">
+                                <img src="./images/post/save.png" alt="" class="post__descr-save">
+                            </div>
+                            <div class="post__descr-text">
+                                <p class="post__descr-like">
+                                    Нравится: 85
+                                </p>
+
+                                <p class="post__descr-comment">
+                                    <strong> isk_premiera </strong> Почему вам понравится жить в ЖК “ЭКОСИТИ”? Мы...
+                                </p>
+
                             </div>
                         </div>
-
                     </div>
+                    <div class="col-3 post">
+                        <img src="./images/post/6-11.jpg" alt="">
+                        <div class="post__descr">
+                            <div class="post__descr-img">
+                                <img src="./images/post/like.png" alt="" class="post__descr-react">
+                                <img src="./images/post/save.png" alt="" class="post__descr-save">
+                            </div>
+                            <div class="post__descr-text">
+                                <p class="post__descr-like">
+                                    Нравится: 67
+                                </p>
+
+                                <p class="post__descr-comment">
+                                    <strong> isk_premiera </strong> Новый ЖК “ЭКОСИТИ” на берегу Волги. Отличная...
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 post">
+                        <img src="./images/post/21-09.jpg" alt="">
+                        <div class="post__descr">
+                            <div class="post__descr-img">
+                                <img src="./images/post/like.png" alt="" class="post__descr-react">
+                                <img src="./images/post/save.png" alt="" class="post__descr-save">
+                            </div>
+                            <div class="post__descr-text">
+                                <p class="post__descr-like">
+                                    Нравится: 85
+                                </p>
+
+                                <p class="post__descr-comment">
+                                    <strong> isk_premiera </strong> Запускаем старт продаж нашего нового объекта...
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
 
@@ -858,7 +819,7 @@
             <div class="base__content center">
 
                 <h1 style="text-align: center;">Фото галерея</h1>
-                <select class="filters-select">
+                <select class="filters-select button">
                     <option value="*">Все дома</option>
                     <option value=".first">Дом 1</option>
                     <option value=".second">Дом 2</option>
