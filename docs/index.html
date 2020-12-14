@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="/css/style.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -14,21 +14,27 @@
 <body>
 
   <header class="header">
-    <div class="header__bg-top"></div>
-    <div class="container">
-      <div class="header__inner">
-        <div class="header__logo">
-          <a href="#">
-            <img class="header__logo-img" src="./img/logo-smart-object.png"
-              srcset="./img/logo-smart-object@2x.png 2x,./img/logo-smart-object@3x.png 3x">
+    <!-- <div class="header__bg-top"></div> -->
+    <div class="header__inner">
+      <div class="container">
+        <div class="header__inner-wrap">
+          <div class="header__logo">
+            <a href="#">
+              <img class="header__logo-img" src="/img/logo-smart-object.png"
+                srcset="/img/logo-smart-object@2x.png 2x,/img/logo-smart-object@3x.png 3x">
+            </a>
+          </div>
+
+          <a href="#" class="header__btn btn">
+            download for windows
           </a>
         </div>
-
-        <a href="#" class="header__btn btn">
-          download for windows
-        </a>
-
       </div>
+
+
+    </div>
+    <div class="container">
+
       <div class="header__text">
 
         WANT YOUR PC TO PAY
@@ -74,9 +80,9 @@
                 </span>
                 <p class="clients__step-text">
                   Install the app
-                  <p>
-                    (make sure you allow the Windows "exceptions" notifications)
-                  </p>
+                <p>
+                  (make sure you allow the Windows "exceptions" notifications)
+                </p>
 
                 </p>
               </div>
@@ -86,9 +92,9 @@
                 </span>
                 <p class="clients__step-text">
                   Start the platform and login
-                  <p>
-                    (with one click using the Google or Discord button you'll see)
-                  </p>
+                <p>
+                  (with one click using the Google or Discord button you'll see)
+                </p>
 
                 </p>
               </div>
@@ -116,15 +122,11 @@
 
         </div>
         <div class="clients__video">
-          <img class="clients__img" src="./img/clients-video-banner.png" alt="">
-          <object class="clients__video-play" type="image/svg+xml" data="./img/play.svg">
-            <img src="./img/play.png">
-          </object>
-          <object class="clients__video-ellipse" type="image/svg+xml" data="./img/ellipse.svg">
-            <img src="./img/ellipse.png">
-          </object>
+          <img class="clients__img" src="/img/clients-video-banner.png" alt="">
+          <img class="clients__video-play" src="/img/play.png">
+          <img class="clients__video-ellipse" src="/img/ellipse.png">
+          <div id="ytplayer" class="clients__iframe"></div>
         </div>
-      </div>
 
     </section>
 
@@ -132,7 +134,7 @@
     <section class="features">
       <div class="container">
         <div class="features__inner">
-          <img class="features__img" src="./img/tower3.png" alt="">
+          <img class="features__img" src="/img/tower3.png" alt="">
           <div class="features__info">
             <h2 class="features__title title">
               The Platform Consists of Six Core
@@ -177,14 +179,14 @@
           </h2>
 
           <div class="assets__items">
-            <img class="assets__item" src="./img/assets-item-1.png" alt="">
-            <img class="assets__item" src="./img/assets-item-2.png" alt="">
-            <img class="assets__item" src="./img/assets-item-3.png" alt="">
-            <img class="assets__item" src="./img/assets-item-4.png" alt="">
-            <img class="assets__item" src="./img/assets-item-1.png" alt="">
-            <img class="assets__item" src="./img/assets-item-2.png" alt="">
-            <img class="assets__item" src="./img/assets-item-3.png" alt="">
-            <img class="assets__item" src="./img/assets-item-4.png" alt="">
+            <img class="assets__item" src="/img/assets-item-1.png" alt="">
+            <img class="assets__item" src="/img/assets-item-2.png" alt="">
+            <img class="assets__item" src="/img/assets-item-3.png" alt="">
+            <img class="assets__item" src="/img/assets-item-4.png" alt="">
+            <img class="assets__item" src="/img/assets-item-1.png" alt="">
+            <img class="assets__item" src="/img/assets-item-2.png" alt="">
+            <img class="assets__item" src="/img/assets-item-3.png" alt="">
+            <img class="assets__item" src="/img/assets-item-4.png" alt="">
           </div>
           <a href="#" class="assets__btn btn">
             download for windows
@@ -202,7 +204,7 @@
       <div class="footer__wrapp">
         <div class="footer__logo">
           <a href="#">
-            <img src="./img/logo-white.png" alt="">
+            <img src="/img/logo-white.png" alt="">
           </a>
         </div>
         <div class="footer__contact">
@@ -223,6 +225,25 @@
       </div>
     </div>
   </footer>
+  <!-- Youtube API -->
+  <script>
+    // Load the IFrame Player API code asynchronously.
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/player_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    // Replace the 'ytplayer' element with an <iframe> and
+    // YouTube player after the API code downloads.
+    var player;
+    function onYouTubePlayerAPIReady() {
+      player = new YT.Player('ytplayer', {
+        videoId: 'Jy0OusI6ECs'
+      });
+    }
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
